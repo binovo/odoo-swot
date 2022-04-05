@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2021 Binovo IT Human Project SL
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="swot_analysis_view_tree_inherit" model="ir.ui.view">
+        <field name="name">swot.analysis.view.tree.inherit</field>
+        <field name="model">swot.group.analysis</field>
+        <field name="inherit_id" ref="binovo_swot_dafo.swot_analysis_view_tree"/>
+        <field name="arch" type="xml">
+            <field name="manager_ids" position="after">
+                <field name="project_id"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="swot_analysis_view_form_inherit" model="ir.ui.view">
+        <field name="name">swot.analysis.view.form.inherit</field>
+        <field name="model">swot.group.analysis</field>
+        <field name="inherit_id" ref="binovo_swot_dafo.swot_analysis_view_form"/>
+        <field name="arch" type="xml">
+            <field name="tag_ids" position="after">
+                <field name="project_id" options="{'no_create': True, 'no_open': True}"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

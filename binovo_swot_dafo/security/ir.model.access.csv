@@ -1,0 +1,17 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_swot_follower,swot.group,model_swot_group,binovo_swot_dafo.group_swot_follower,1,0,0,0
+access_swot_user,swot.group,model_swot_group,binovo_swot_dafo.group_swot_user,1,1,1,1
+access_swot_manager,swot.group,model_swot_group,binovo_swot_dafo.group_swot_manager,1,1,1,1
+access_swot_analysis_follower,swot.group.analysis,model_swot_group_analysis,binovo_swot_dafo.group_swot_follower,1,0,0,0
+access_swot_analysis_user,swot.group.analysis,model_swot_group_analysis,binovo_swot_dafo.group_swot_user,1,1,1,1
+access_swot_analysis_manager,swot.group.analysis,model_swot_group_analysis,binovo_swot_dafo.group_swot_manager,1,1,1,1
+access_analysis_tags_follower,swot.analysis.tags,model_swot_analysis_tags,binovo_swot_dafo.group_swot_follower,1,0,0,0
+access_analysis_tags_user,swot.analysis.tags,model_swot_analysis_tags,binovo_swot_dafo.group_swot_user,1,0,0,0
+access_analysis_tags_manager,swot.analysis.tags,model_swot_analysis_tags,binovo_swot_dafo.group_swot_manager,1,1,1,1
+access_analysis_stage_follower,swot.analysis.stage,model_swot_analysis_stage,binovo_swot_dafo.group_swot_follower,1,0,0,0
+access_analysis_stage_user,swot.analysis.stage,model_swot_analysis_stage,binovo_swot_dafo.group_swot_user,1,0,0,0
+access_analysis_stage_manager,swot.analysis.stage,model_swot_analysis_stage,binovo_swot_dafo.group_swot_manager,1,1,1,1
+access_analysis_subtype_follower,swot.analysis.subtype,model_swot_analysis_subtype,binovo_swot_dafo.group_swot_follower,1,0,0,0
+access_analysis_subtype_user,swot.analysis.subtype,model_swot_analysis_subtype,binovo_swot_dafo.group_swot_user,1,0,0,0
+access_analysis_subtype_manager,swot.analysis.subtype,model_swot_analysis_subtype,binovo_swot_dafo.group_swot_manager,1,1,1,1
+

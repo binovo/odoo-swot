@@ -1,0 +1,589 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* binovo_swot_dafo
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-01 07:15+0000\n"
+"PO-Revision-Date: 2021-06-01 07:15+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: binovo_swot_dafo
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_group_view_kanban
+msgid "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Manage\" title=\"Manage\"/>"
+msgstr "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Administrar\" title=\"Administrar\"/>"
+
+#. module: binovo_swot_dafo
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_analysis_view_form
+msgid "<span>Information</span>"
+msgstr "<span>Información</span>"
+
+#. module: binovo_swot_dafo
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_analysis_view_form
+msgid "<strong>Opportunities</strong><br/> All external news that we must take advantage of to maintain a privileged position of the company, area or project with respect to third parties involved."
+msgstr "<strong>Oportunidades</strong><br/> Son aquellas novedades o nichos desaprovechados por nuestros competidores que pueden llegar a favorecer de manera rápida  nuestro  proyecto, ámbito o empresa. Un ejemplo de oportunidad puede ser que el ministerio de defensa va a solicitar que una empresa local desarrolle un software y para ello va a aportar millones de euros y, nosotros, tenemos experiencia en ese ámbito de software y además el gerente juega al golf con el ministro de defensa."
+
+#. module: binovo_swot_dafo
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_analysis_view_form
+msgid "<strong>Strengths</strong><br/> All internal processes and operations that give us a privileged position in the company, area or project."
+msgstr "<strong>Fortalezas</strong><br/> Son aquellas virtudes que nos hacen diferenciarnos y que nos definen con orgullo y que siempre van a favorecer  nuestro  proyecto, ámbito o empresa. Un ejemplo de fortaleza sería por ejemplo que cada vez que alguien busca "empresa de software" en internet, somos la primera sugerencia. Las  fortalezas deben revisarse periódicamente para verificar que aún siguen siendo fortalezas y no se han convertido en debilidades o están sufriendo una amenaza."
+
+#. module: binovo_swot_dafo
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_analysis_view_form
+msgid "<strong>Threats</strong><br/> All actions of third parties that endanger the future of the company, area or project."
+msgstr "<strong>Amenazas</strong><br/> Son todas aquellas acciones que, generalmente son externas y que como su nombre indica pueden atacar nuestro  proyecto, ámbito o empresa. Una amenaza sería por ejemplo que una empresa china va a empezar a vender productos  como los nuestros en nuestros mercados habituales."
+
+#. module: binovo_swot_dafo
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_analysis_view_form
+msgid "<strong>Weaknesses</strong><br/> All internal processes and operations that endanger the future of the company, area or project."
+msgstr "<strong>Debilidades</strong><br/> Son todas aquellas vulnerabilidades internas , generalmente, reconocidas que ponen en peligro un proyecto, ámbito o empresa. Una debilidad sería por ejemplo que nadie en el equipo de ventas no habla inglés y eso impide que nos expandamos a otros mercados fuera del nacional, siendo una empresa de software."
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__message_needaction
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__message_needaction
+msgid "Action Needed"
+msgstr "Acción necesaria"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__activity_state
+msgid "Activity State"
+msgstr "Estado de la actividad"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__agreements
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_analysis_view_form
+msgid "Agreements"
+msgstr "Acuerdos"
+
+#. module: binovo_swot_dafo
+#: model:ir.actions.act_window,name:binovo_swot_dafo.act_swot_group_analysis_all
+#: model:ir.actions.act_window,name:binovo_swot_dafo.open_view_swot_analysis_list
+#: model:ir.actions.act_window,name:binovo_swot_dafo.open_view_swot_analysis_report
+#: model:ir.model,name:binovo_swot_dafo.model_swot_group_analysis
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__analysis_ids
+#: model:ir.ui.menu,name:binovo_swot_dafo.menu_swot_analysis_list
+#: model:ir.ui.menu,name:binovo_swot_dafo.menu_swot_analysis_report
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_analysis_view_calendar
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_analysis_view_form
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_analysis_view_pivot
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_analysis_view_tree
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_group_view_form
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_group_view_kanban
+msgid "Analysis"
+msgstr "Análisis"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__analysis_count
+msgid "Analysis Count"
+msgstr "Cantidad análisis"
+
+#. module: binovo_swot_dafo
+#: model:ir.actions.act_window,name:binovo_swot_dafo.open_view_analysis_stage_config
+#: model:ir.model,name:binovo_swot_dafo.model_swot_analysis_stage
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_analysis_stage_tree
+msgid "Analysis Stage"
+msgstr "Etapa análisis"
+
+#. module: binovo_swot_dafo
+#: model:ir.ui.menu,name:binovo_swot_dafo.menu_analysis_stage_config
+msgid "Analysis Stages"
+msgstr "Etapas análisis"
+
+#. module: binovo_swot_dafo
+#: model:ir.actions.act_window,name:binovo_swot_dafo.open_view_analysis_subtype_config
+#: model:ir.model,name:binovo_swot_dafo.model_swot_analysis_subtype
+#: model:ir.ui.menu,name:binovo_swot_dafo.menu_analysis_subtype_config
+msgid "Analysis subtypes"
+msgstr "Subtipos análisis"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__message_attachment_count
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__message_attachment_count
+msgid "Attachment Count"
+msgstr "Conteo de archivos adjuntos"
+
+#. module: binovo_swot_dafo
+#: model:swot.analysis.stage,name:binovo_swot_dafo.swot_analysis_stage_3
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_tags__color
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__color
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__color
+msgid "Color Index"
+msgstr "Índice de Colores"
+
+#. module: binovo_swot_dafo
+#: model:ir.ui.menu,name:binovo_swot_dafo.menu_swot_config
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_stage__create_uid
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_subtype__create_uid
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_tags__create_uid
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__create_uid
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_stage__create_date
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_subtype__create_date
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_tags__create_date
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__create_date
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: binovo_swot_dafo
+#: model:ir.ui.menu,name:binovo_swot_dafo.menu_swot
+msgid "Dashboard"
+msgstr "Tablero"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__date_deadline
+msgid "Deadline"
+msgstr "Fecha límite"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__description
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_analysis_view_form
+msgid "Description"
+msgstr "Descripción"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_stage__display_name
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_subtype__display_name
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_tags__display_name
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__display_name
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: binovo_swot_dafo
+#: model:swot.analysis.stage,name:binovo_swot_dafo.swot_analysis_stage_2
+msgid "Done"
+msgstr "Hecho"
+
+#. module: binovo_swot_dafo
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_group_view_kanban
+msgid "Edit"
+msgstr "Editar"
+
+#. module: binovo_swot_dafo
+#: model:res.groups,name:binovo_swot_dafo.group_swot_follower
+msgid "Follower"
+msgstr "Seguidor"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__message_follower_ids
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__message_channel_ids
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Seguidores (Canales)"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__message_partner_ids
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Empresas)"
+
+#. module: binovo_swot_dafo
+#: model:res.groups,name:binovo_swot_dafo.group_swot_user
+msgid "Group Manager"
+msgstr "Responsable de grupo"
+
+#. module: binovo_swot_dafo
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_group_view_form
+msgid "Group Name"
+msgstr "Grupo"
+
+#. module: binovo_swot_dafo
+#: model:ir.module.category,description:binovo_swot_dafo.module_category_swot_management
+msgid "Helps you manage your SWOT groups and analysis"
+msgstr "Le ayuda a administrar sus grupos DAFO y análisis"
+
+#. module: binovo_swot_dafo
+#: selection:swot.group.analysis,priority:0
+msgid "High"
+msgstr "Alta"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_stage__id
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_subtype__id
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_tags__id
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__id
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__id
+msgid "ID"
+msgstr "ID"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,help:binovo_swot_dafo.field_swot_group__message_unread
+#: model:ir.model.fields,help:binovo_swot_dafo.field_swot_group_analysis__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Si está marcado, hay nuevos mensajes que requieren su atención"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,help:binovo_swot_dafo.field_swot_group__message_needaction
+#: model:ir.model.fields,help:binovo_swot_dafo.field_swot_group_analysis__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcado, hay nuevos mensajes que requieren su atención."
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,help:binovo_swot_dafo.field_swot_group__message_has_error
+#: model:ir.model.fields,help:binovo_swot_dafo.field_swot_group_analysis__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si se encuentra marcado, algunos mensajes tienen error de envío."
+
+#. module: binovo_swot_dafo
+#: model:swot.analysis.stage,name:binovo_swot_dafo.swot_analysis_stage_1
+msgid "In Progress"
+msgstr "En progreso"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__message_is_follower
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__message_is_follower
+msgid "Is Follower"
+msgstr "Es un seguidor"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_stage____last_update
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_subtype____last_update
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_tags____last_update
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group____last_update
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_stage__write_uid
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_subtype__write_uid
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_tags__write_uid
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__write_uid
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_stage__write_date
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_subtype__write_date
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_tags__write_date
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__write_date
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: binovo_swot_dafo
+#: model:ir.ui.menu,name:binovo_swot_dafo.menu_swot_lists_config
+msgid "Lists"
+msgstr "Listas"
+
+#. module: binovo_swot_dafo
+#: selection:swot.group.analysis,priority:0
+msgid "Low"
+msgstr "Baja"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__message_main_attachment_id
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Adjuntos principales"
+
+#. module: binovo_swot_dafo
+#: model:res.groups,name:binovo_swot_dafo.group_swot_manager
+msgid "Manager"
+msgstr "Responsable"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__manager_ids
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__manager_ids
+msgid "Managers"
+msgstr "Responsables"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__message_has_error
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de Envío de Mensaje"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__message_ids
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_tags__name
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Siguiente plazo de actividad"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resumen de la siguiente actividad"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__activity_type_id
+msgid "Next Activity Type"
+msgstr "Siguiente tipo de actividad"
+
+#. module: binovo_swot_dafo
+#: selection:swot.group.analysis,priority:0
+msgid "Normal"
+msgstr "Normal"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__message_needaction_counter
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__message_has_error_counter
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__message_has_error_counter
+msgid "Number of error"
+msgstr "Número de error"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,help:binovo_swot_dafo.field_swot_group__message_needaction_counter
+#: model:ir.model.fields,help:binovo_swot_dafo.field_swot_group_analysis__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensajes que requieren una acción"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,help:binovo_swot_dafo.field_swot_group__message_has_error_counter
+#: model:ir.model.fields,help:binovo_swot_dafo.field_swot_group_analysis__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de envío"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,help:binovo_swot_dafo.field_swot_group__message_unread_counter
+#: model:ir.model.fields,help:binovo_swot_dafo.field_swot_group_analysis__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensajes no leidos"
+
+#. module: binovo_swot_dafo
+#: selection:swot.group.analysis,type:0
+msgid "Opportunities"
+msgstr "Oportunidades"
+
+#. module: binovo_swot_dafo
+#: selection:swot.group.analysis,activity_state:0
+msgid "Overdue"
+msgstr "Atrasado"
+
+#. module: binovo_swot_dafo
+#: selection:swot.group.analysis,activity_state:0
+msgid "Planned"
+msgstr "Planificado"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__priority
+msgid "Priority"
+msgstr "Prioridad"
+
+#. module: binovo_swot_dafo
+#: model:ir.ui.menu,name:binovo_swot_dafo.menu_swot_reports_config
+msgid "Reports"
+msgstr "Informes"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__activity_user_id
+msgid "Responsible User"
+msgstr "Usuario responsable"
+
+#. module: binovo_swot_dafo
+#: model:ir.actions.act_window,name:binovo_swot_dafo.open_view_swot_all
+#: model:ir.ui.menu,name:binovo_swot_dafo.menu_main_swot
+msgid "SWOT"
+msgstr "DAFO"
+
+#. module: binovo_swot_dafo
+#: model:ir.model,name:binovo_swot_dafo.model_swot_group
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__group_id
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_group_view_form
+msgid "SWOT group"
+msgstr "Grupo DAFO"
+
+#. module: binovo_swot_dafo
+#: model:ir.actions.act_window,name:binovo_swot_dafo.open_view_swot_all_config
+#: model:ir.ui.menu,name:binovo_swot_dafo.menu_swot_group_config
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_group_view_tree
+msgid "SWOT groups"
+msgstr "Grupos DAFO"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_stage__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__stage_id
+msgid "Stage"
+msgstr "Etapa"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_stage__name
+msgid "Stage Name"
+msgstr "Nombre de la etapa"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,help:binovo_swot_dafo.field_swot_group_analysis__activity_state
+msgid "Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "Estado basado en actividades\n"
+"Vencida: la fecha tope ya ha pasado\n"
+"Hoy: La fecha tope es hoy\n"
+"Planificada: futuras actividades."
+
+#. module: binovo_swot_dafo
+#: selection:swot.group.analysis,type:0
+msgid "Strengths"
+msgstr "Fortalezas"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__subtype_id
+msgid "Subtype"
+msgstr "Subtipo"
+
+#. module: binovo_swot_dafo
+#: model:ir.module.category,name:binovo_swot_dafo.module_category_swot_management
+msgid "Swot"
+msgstr "Dafo"
+
+#. module: binovo_swot_dafo
+#: sql_constraint:swot.analysis.tags:0
+msgid "Tag name already exists !"
+msgstr "El nombre de la etiqueta ya existe"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__tag_ids
+msgid "Tags"
+msgstr "Etiquetas"
+
+#. module: binovo_swot_dafo
+#: model:ir.model,name:binovo_swot_dafo.model_swot_analysis_tags
+msgid "Tags of analysis"
+msgstr "Etiquetas análisis"
+
+#. module: binovo_swot_dafo
+#: selection:swot.group.analysis,type:0
+msgid "Threats"
+msgstr "Amenazas"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__name
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_analysis_view_form
+msgid "Title"
+msgstr "Título"
+
+#. module: binovo_swot_dafo
+#: model:swot.analysis.stage,name:binovo_swot_dafo.swot_analysis_stage_0
+msgid "To Do"
+msgstr "Por hacer"
+
+#. module: binovo_swot_dafo
+#: selection:swot.group.analysis,activity_state:0
+msgid "Today"
+msgstr "Hoy"
+
+#. module: binovo_swot_dafo
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_group_view_kanban
+msgid "Total:"
+msgstr "Total:"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__totals_list
+msgid "Totals List"
+msgstr "Total listas"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__type_image
+msgid "Type Image"
+msgstr "Tipo imagen"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__message_unread
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__message_unread
+msgid "Unread Messages"
+msgstr "Mensajes por leer"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group__message_unread_counter
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_group_analysis__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contador de mensajes sin leer"
+
+#. module: binovo_swot_dafo
+#: selection:swot.group.analysis,priority:0
+msgid "Very Low"
+msgstr "Muy baja"
+
+#. module: binovo_swot_dafo
+#: selection:swot.group.analysis,type:0
+msgid "Weaknesses"
+msgstr "Debilidades"
+
+#. module: binovo_swot_dafo
+#: code:addons/binovo_swot_dafo/models/swot.py:54
+#, python-format
+msgid "You cannot delete a SWOT group containing analysis. You can either delete all the group's analysis and then delete the SWOT group."
+msgstr "No puede borrar un grupo DAFO que contiene análisis. Puede borrar todos los análisis del grupo y entonces borrar el grupo DAFO."
+
+#. module: binovo_swot_dafo
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_group_view_form
+msgid "e.g. Human Resources"
+msgstr "p.ej. Recursos humanos"
+
+#. module: binovo_swot_dafo
+#: model:ir.model.fields,field_description:binovo_swot_dafo.field_swot_analysis_subtype__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: binovo_swot_dafo
+#: model_terms:ir.ui.view,arch_db:binovo_swot_dafo.swot_analysis_view_kanban
+msgid "oe_kanban_text_red"
+msgstr "oe_kanban_text_red"
+

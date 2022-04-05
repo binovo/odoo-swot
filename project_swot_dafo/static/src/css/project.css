@@ -1,0 +1,33 @@
+.o_project_swot_analysis.o_group.o_group_col_6 {
+  width: 48%;
+  margin-left: 2%;
+}
+
+.o_project_swot_analysis th{
+    display:none
+}
+
+.o_project_swot_analysis.weaknesses .o_horizontal_separator {
+    background-image: url(/binovo_swot_dafo/static/src/img/ico_weaknesses.png);
+}
+
+.o_project_swot_analysis.threats .o_horizontal_separator {
+    background-image: url(/binovo_swot_dafo/static/src/img/ico_threats.png);
+}
+
+.o_project_swot_analysis.strengths .o_horizontal_separator {
+    background-image: url(/binovo_swot_dafo/static/src/img/ico_strengths.png);
+}
+
+.o_project_swot_analysis.opportunities .o_horizontal_separator {
+    background-image: url(/binovo_swot_dafo/static/src/img/ico_opportunities.png);
+}
+
+.o_project_swot_analysis .o_horizontal_separator{
+    background-size: 28px;
+    background-repeat: no-repeat;
+    padding: 4px 0 5px 32px;
+    min-height: 28px;
+    color: #666;
+    font-size:16px;
+}

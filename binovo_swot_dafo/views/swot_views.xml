@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2021 Binovo IT Human Project SL
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="swot_analysis_view_tree" model="ir.ui.view">
+        <field name="name">swot.analysis.tree</field>
+        <field name="model">swot.group.analysis</field>
+        <field name="arch" type="xml">
+            <tree string="Analysis">
+                <field name="group_id"/>
+                <field name="date"/>
+                <field name="name"/>
+                <field name="type"/>
+                <field name="subtype_id"/>
+                <field name="stage_id"/>
+                <field name="manager_ids" widget="many2many_tags"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="act_swot_group_analysis_all" model="ir.actions.act_window">
+        <field name="name">Analysis</field>
+        <field name="res_model">swot.group.analysis</field>
+        <field name="view_mode">kanban,tree,calendar,form</field>
+        <field name="context">{
+            'search_default_group_id': [active_id],
+            'default_group_id': active_id,
+        }</field>
+        <field name="search_view_id" ref="swot_analysis_view_tree"/>
+    </record>
+
+    <record id="swot_group_view_form" model="ir.ui.view">
+        <field name="name">swot.group.view.form</field>
+        <field name="model">swot.group</field>
+        <field name="arch" type="xml">
+            <form string="SWOT group">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button" type="action"
+                            name="%(act_swot_group_analysis_all)d" icon="fa-tasks">
+                            <field string="Analysis" name="analysis_count" widget="statinfo"/>
+                        </button>
+                    </div>
+                    <group>
+                        <field name="name" class="o_group_name oe_inline" string="Group Name" placeholder="e.g. Human Resources"/>
+                        <field name="manager_ids" widget="many2many_tags" options="{'no_create': True, 'no_open': True}"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="swot_group_view_tree" model="ir.ui.view">
+        <field name="name">swot.group.tree</field>
+        <field name="model">swot.group</field>
+        <field name="arch" type="xml">
+            <tree string="SWOT groups">
+                <field name="name"/>
+                <field name="manager_ids" widget="many2many_tags"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="swot_group_view_kanban" model="ir.ui.view">
+        <field name="name">swot.group.kanban</field>
+        <field name="model">swot.group</field>
+        <field name="arch" type="xml">
+            <kanban class="oe_background_grey o_kanban_dashboard o_swot_kanban o_emphasize_colors">
+                <field name="name"/>
+                <field name="color"/>
+                <field name="analysis_ids"/>
+                <field name="analysis_count"/>
+                <field name="totals_list"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="#{kanban_color(record.color.raw_value)} oe_kanban_global_click o_has_icon">
+                            <t t-value="JSON.parse(record.totals_list.raw_value)" t-set="totals_list"/>
+                            <div class="o_swot_kanban_main">
+                                <div class="o_kanban_card_content">
+                                    <div class="o_kanban_primary_left">
+                                        <div class="o_primary">
+                                            <span><t t-esc="record.name.value"/></span>
+                                        </div>
+                                    </div>
+                                    <div class="o_kanban_swot_group_content">
+                                        <t t-if="totals_list">
+                                            <ul>
+                                                <t t-foreach="totals_list" t-as="item">
+                                                    <li t-att-class="item.type">
+                                                        <t t-value="item.type" t-set="analysis_type"/>
+                                                        <a name="%(act_swot_group_analysis_all)d" type="action" t-attf-data-context="{'search_default_type': '#{item.type}'}">
+                                                            Total: <t t-esc="item.count"/>
+                                                        </a>
+                                                    </li>
+                                                </t>
+                                            </ul>
+                                        </t>
+                                    </div>
+                                </div>
+                                <div class="o_kanban_card_manage_pane dropdown-menu" groups="binovo_swot_dafo.group_swot_manager" role="menu">
+                                    <div class="o_kanban_card_manage_section o_kanban_manage_reports">
+                                        <div role="menuitem">
+                                            <a type="edit">Edit</a>
+                                        </div>
+                                    </div>
+                                    <div role="menuitem" class="o_swot_kanban_colorpicker">
+                                        <ul class="oe_kanban_colorpicker" data-field="color" role="popup"/>
+                                    </div>
+                                </div>
+                                <a class="o_kanban_manage_toggle_button o_left" href="#" groups="binovo_swot_dafo.group_swot_manager"><i class="fa fa-ellipsis-v" role="img" aria-label="Manage" title="Manage"/></a>
+                            </div>
+
+                            <div class="o_swot_group_kanban_boxes">
+                                <a class="o_swot_group_kanban_box" name="%(act_swot_group_analysis_all)d" type="action">
+                                    <span><t t-esc="record.analysis_count.value"/> Analysis</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="swot_analysis_view_form" model="ir.ui.view">
+        <field name="name">swot.analysis.view.form</field>
+        <field name="model">swot.group.analysis</field>
+        <field name="arch" type="xml">
+            <form string="Analysis">
+                <header>
+                    <field name="stage_id" widget="statusbar" clickable="True"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <a class="btn btn-sm oe_stat_button op-analysis-info-btn" data-toggle="collapse" href="#collapse-help" role="button">
+                            <div class="fa fa-fw o_button_icon fa-info"/>
+                            <span>Information</span>
+                        </a>
+                    </div>
+                    <div class="oe_title">
+                        <h1 class="o_row o_swot_analysis_type">
+                            <field name="type_image" widget="image" options='{"size": [42, 42]}'/>
+                            <field name="type" nolabel="1"/>
+                        </h1>
+                    </div>
+                    <div class="collapse" id="collapse-help">
+                        <div class="alert alert-info info_icon o_swot_analysis_info" role="alert">
+                            <ul>
+                                <li class="weaknesses"><strong>Weaknesses</strong><br/> All internal processes and operations that endanger the future of the company, area or project.</li>
+                                <li class="threats"><strong>Threats</strong><br/> All actions of third parties that endanger the future of the company, area or project.</li>
+                                <li class="strengths"><strong>Strengths</strong><br/> All internal processes and operations that give us a privileged position in the company, area or project.</li>
+                                <li class="opportunities"><strong>Opportunities</strong><br/> All external news that we must take advantage of to maintain a privileged position of the company, area or project with respect to third parties involved.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <field name="name" nolabel="1" placeholder="Title"/>
+                    <group>
+                        <group>
+                            <field name="group_id" options="{'no_create': True, 'no_open': True}"/>
+                            <field name="subtype_id" options="{'no_create': True, 'no_open': True}"/>
+                            <field name="date"/>
+                            <field name="manager_ids" widget="many2many_tags" options="{'no_create': True, 'no_open': True}"/>
+                        </group>
+                        <group>
+                            <field name="priority" widget="priority"/>
+                            <field name="date_deadline"/>
+                            <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color', 'no_create_edit': True}"/>
+                        </group>
+                    </group>
+                    <group string="Description" class="o_swot_group_title">
+                      <field nolabel="1" name="description" type="html"/>
+                    </group>
+                    <group string="Agreements" class="o_swot_group_title">
+                      <field nolabel="1" name="agreements" type="html"/>
+                    </group>
+                </sheet>
+
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="swot_analysis_view_calendar" model="ir.ui.view">
+        <field name="name">swot.analysis.calendar</field>
+        <field name="model">swot.group.analysis</field>
+        <field eval="2" name="priority"/>
+        <field name="arch" type="xml">
+            <calendar date_start="date_deadline" string="Analysis" mode="month">
+                <field name="name"/>
+            </calendar>
+        </field>
+    </record>
+
+    <record id="swot_analysis_view_kanban" model="ir.ui.view">
+        <field name="name">swot.analysis.kanban</field>
+        <field name="model">swot.group.analysis</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="stage_id" class="o_kanban_small_column o_kanban_swot_analysis">
+                <field name="id"/>
+                <field name="color"/>
+                <field name="stage_id"/>
+                <field name="type"/>
+                <field name="subtype_id"/>
+                <field name="name"/>
+                <field name="manager_ids"/>
+                <field name="date_deadline"/>
+                <field name="activity_ids"/>
+                <field name="activity_state"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_color_#{kanban_getcolor(record.color.raw_value)} oe_kanban_card oe_kanban_global_click">
+                            <div class="oe_kanban_content">
+                                <div class="o_kanban_record_top">
+                                    <div class="o_kanban_icon">
+                                        <img t-att-src="kanban_image('swot.group.analysis', 'type_image', record.id.raw_value)" class="oe_kanban_analysis_type" alt="Type"/>
+                                    </div>
+                                    <div class="o_kanban_record_headings" >
+                                        <strong class="o_kanban_record_title"><t t-esc="record.name.value"/></strong><br/>
+                                        <small class="o_kanban_record_subtitle text-muted">
+                                            <t t-esc="record.subtype_id.value" invisible="context.get('default_subtype_id', False)"/><br/>
+                                            <t t-if="record.date_deadline.raw_value and record.date_deadline.raw_value lt (new Date())" t-set="red">oe_kanban_text_red</t>
+                                            <span t-attf-class="#{red || ''} pull-right"><i><field name="date_deadline"/></i></span>
+                                        </small>
+                                    </div>
+                                    <div class="o_dropdown_kanban dropdown" groups="base.group_user">
+                                        <a class="dropdown-toggle btn" data-toggle="dropdown" role="button" href="#" >
+                                            <span class="fa fa-ellipsis-v" aria-hidden="true"/>
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                            <li>
+                                                <ul class="oe_kanban_colorpicker" data-field="color"/>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="o_kanban_record_body">
+                                    <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                                </div>
+                                <div class="oe_kanban_bottom_right">
+                                    <t t-foreach="record.manager_ids.raw_value" t-as="user">
+                                        <img t-att-src="kanban_image('res.users', 'image_small', user)" width="24" height="24" class="oe_kanban_avatar pull-right ml4" t-att-data-member_id="user" alt="Manager"/>
+                                    </t>
+                                </div>
+                                <div class="o_kanban_record_bottom">
+                                    <div class="oe_kanban_bottom_left">
+                                        <field name="priority" widget="priority"/>
+                                        <field name="activity_ids" widget="kanban_activity"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oe_clear"></div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+     </record>
+
+    <record id="swot_analysis_view_pivot" model="ir.ui.view">
+        <field name="name">swot.analysis.pivot</field>
+        <field name="model">swot.group.analysis</field>
+        <field name="arch" type="xml">
+            <pivot string="Analysis">
+                <field name="group_id" type="row"/>
+                <field name="stage_id" type="col"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="swot_analysis_stage_tree" model="ir.ui.view">
+        <field name="name">swot.analysis.stage.tree</field>
+        <field name="model">swot.analysis.stage</field>
+        <field name="arch" type="xml">
+            <tree string="Analysis Stage">
+                <field name="sequence" widget="handle" groups="base.group_no_one"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

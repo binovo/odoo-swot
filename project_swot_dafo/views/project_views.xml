@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2021 Binovo IT Human Project SL
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="project_project_form_view" model="ir.ui.view">
+        <field name="name">project.project.form</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project" />
+        <field name="arch" type="xml">
+            <page name="settings" position="after">
+                <page name="project_swot" string="SWOT" groups="binovo_swot_dafo.group_swot_manager, binovo_swot_dafo.group_swot_user, binovo_swot_dafo.group_swot_follower">
+                    <group>
+                        <button class="oe_edit_only" name="add_analysis" type="object" string="Add analysis"/>
+                    </group>
+                    <group>
+                        <group class="o_project_swot_analysis weaknesses" string="Weaknesses">
+                            <field colspan="2" name="weaknesses_ids" nolabel="1">
+                                <tree create="false" delete="false">
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </group>
+                        <group class="o_project_swot_analysis threats" string="Threats">
+                            <field colspan="2" name="threats_ids" nolabel="1">
+                                <tree create="false" delete="false">
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </group>
+                        <group class="o_project_swot_analysis strengths" string="Strengths">
+                            <field colspan="2" name="strengths_ids" nolabel="1">
+                                <tree create="false" delete="false">
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </group>
+                        <group class="o_project_swot_analysis opportunities" string="Opportunities">
+                            <field colspan="2" name="opportunities_ids" nolabel="1">
+                                <tree create="false" delete="false">
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </group>
+                </page>
+             </page>
+        </field>
+    </record>
+
+</odoo>
+

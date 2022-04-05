@@ -1,0 +1,85 @@
+a.op-analysis-info-btn > * {
+    padding-top: 5px !important;
+}
+
+.o_form_view.o_form_editable .o_row.o_swot_analysis_type > div.o_field_image {
+    width: auto !important;
+    flex: none;
+}
+.o_swot_analysis_type .o_field_image {
+    float: left
+}
+.o_swot_analysis_type .o_field_image img{
+    display: inline;
+    margin-right: 5px;
+}
+.o_swot_kanban .o_kanban_swot_group_content ul{
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 8px;
+}
+
+.o_swot_kanban .o_kanban_swot_group_content ul li a{
+    color:#333
+}
+
+.o_swot_kanban .o_kanban_swot_group_content ul li a:hover{
+    text-decoration: underline;
+}
+
+.o_swot_analysis_info {
+    background:#F8F8F8;
+    border-color:#CCC;
+    color:#555
+}
+
+.o_swot_analysis_info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.o_swot_analysis_info ul li.weaknesses,
+.o_swot_kanban .o_kanban_swot_group_content ul li.weaknesses {
+    background-image: url(/binovo_swot_dafo/static/src/img/ico_weaknesses.png);
+}
+
+.o_swot_analysis_info ul li.threats,
+.o_swot_kanban .o_kanban_swot_group_content ul li.threats {
+    background-image: url(/binovo_swot_dafo/static/src/img/ico_threats.png);
+}
+
+.o_swot_analysis_info ul li.strengths,
+.o_swot_kanban .o_kanban_swot_group_content ul li.strengths {
+    background-image: url(/binovo_swot_dafo/static/src/img/ico_strengths.png);
+}
+
+.o_swot_analysis_info ul li.opportunities,
+.o_swot_kanban .o_kanban_swot_group_content ul li.opportunities {
+    background-image: url(/binovo_swot_dafo/static/src/img/ico_opportunities.png);
+}
+
+.o_swot_analysis_info ul li {
+    background-size: 42px;
+    background-repeat: no-repeat;
+    padding: 0px 0 18px 50px;
+    min-height: 28px;
+}
+
+.o_swot_kanban .o_kanban_swot_group_content ul li {
+    background-size: 24px;
+    background-repeat: no-repeat;
+    padding: 4px 0 4px 28px;
+    min-height: 28px;
+}
+
+.o_kanban_swot_analysis .o_kanban_icon {
+    margin-right: 5px;
+}
+.o_kanban_swot_analysis .o_kanban_icon .oe_kanban_analysis_type {
+    width: 48px;
+}
+
+.o_swot_group_title .o_horizontal_separator {
+    font-size:15px;
+    color:#4C4C4C;
+}

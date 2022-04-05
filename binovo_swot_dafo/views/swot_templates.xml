@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2021 Binovo IT Human Project SL
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template id="assets_backend" name="binovo_swot_dafo assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/binovo_swot_dafo/static/src/css/swot.css"/>
+            <script type="text/javascript" src="/binovo_swot_dafo/static/src/js/swot.js"/>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,130 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* project_swot_dafo
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-01 10:34+0000\n"
+"PO-Revision-Date: 2021-06-01 10:34+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: project_swot_dafo
+#: model_terms:ir.ui.view,arch_db:project_swot_dafo.project_project_form_view
+#: model_terms:ir.ui.view,arch_db:project_swot_dafo.view_add_swot_analysis_wizard_form
+msgid "Add analysis"
+msgstr "Añadir análisis"
+
+#. module: project_swot_dafo
+#: code:addons/project_swot_dafo/models/project.py:25
+#, python-format
+msgid "Add swot analysis"
+msgstr "Añadir análisis DAFO"
+
+#. module: project_swot_dafo
+#: model:ir.model,name:project_swot_dafo.model_swot_group_analysis
+#: model:ir.model.fields,field_description:project_swot_dafo.field_project_project__swot_analysis_ids
+msgid "Analysis"
+msgstr "Análisis"
+
+#. module: project_swot_dafo
+#: model_terms:ir.ui.view,arch_db:project_swot_dafo.view_add_swot_analysis_wizard_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: project_swot_dafo
+#: model:ir.model.fields,field_description:project_swot_dafo.field_add_swot_analysis_wizard__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: project_swot_dafo
+#: model:ir.model.fields,field_description:project_swot_dafo.field_add_swot_analysis_wizard__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: project_swot_dafo
+#: model:ir.model.fields,field_description:project_swot_dafo.field_add_swot_analysis_wizard__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: project_swot_dafo
+#: model:ir.model.fields,field_description:project_swot_dafo.field_add_swot_analysis_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: project_swot_dafo
+#: model:ir.model.fields,field_description:project_swot_dafo.field_add_swot_analysis_wizard____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: project_swot_dafo
+#: model:ir.model.fields,field_description:project_swot_dafo.field_add_swot_analysis_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: project_swot_dafo
+#: model:ir.model.fields,field_description:project_swot_dafo.field_add_swot_analysis_wizard__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: project_swot_dafo
+#: selection:add.swot.analysis.wizard,analysis_type:0
+#: model:ir.model.fields,field_description:project_swot_dafo.field_project_project__opportunities_ids
+#: model_terms:ir.ui.view,arch_db:project_swot_dafo.project_project_form_view
+msgid "Opportunities"
+msgstr "Oportunidades"
+
+#. module: project_swot_dafo
+#: model:ir.model,name:project_swot_dafo.model_project_project
+#: model:ir.model.fields,field_description:project_swot_dafo.field_swot_group_analysis__project_id
+msgid "Project"
+msgstr "Proyecto"
+
+#. module: project_swot_dafo
+#: model_terms:ir.ui.view,arch_db:project_swot_dafo.project_project_form_view
+msgid "SWOT"
+msgstr "DAFO"
+
+#. module: project_swot_dafo
+#: selection:add.swot.analysis.wizard,analysis_type:0
+#: model:ir.model.fields,field_description:project_swot_dafo.field_project_project__strengths_ids
+#: model_terms:ir.ui.view,arch_db:project_swot_dafo.project_project_form_view
+msgid "Strengths"
+msgstr "Fortalezas"
+
+#. module: project_swot_dafo
+#: code:addons/project_swot_dafo/wizard/add_swot_analysis.py:20
+#, python-format
+msgid "Swot analysis"
+msgstr "Análisis DAFO"
+
+#. module: project_swot_dafo
+#: selection:add.swot.analysis.wizard,analysis_type:0
+#: model:ir.model.fields,field_description:project_swot_dafo.field_project_project__threats_ids
+#: model_terms:ir.ui.view,arch_db:project_swot_dafo.project_project_form_view
+msgid "Threats"
+msgstr "Amenazas"
+
+#. module: project_swot_dafo
+#: model:ir.model.fields,field_description:project_swot_dafo.field_add_swot_analysis_wizard__analysis_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: project_swot_dafo
+#: selection:add.swot.analysis.wizard,analysis_type:0
+#: model:ir.model.fields,field_description:project_swot_dafo.field_project_project__weaknesses_ids
+#: model_terms:ir.ui.view,arch_db:project_swot_dafo.project_project_form_view
+msgid "Weaknesses"
+msgstr "Debilidades"
+
+#. module: project_swot_dafo
+#: model:ir.model,name:project_swot_dafo.model_add_swot_analysis_wizard
+msgid "add.swot.analysis.wizard"
+msgstr "add.swot.analysis.wizard"
+
