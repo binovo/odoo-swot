@@ -5,7 +5,7 @@
 {
     "name": "SWOT/DAFO",
     "summary": "Grouping the weaknesses, threats, strengths and opportunities",
-    "version": "12.0.1.0.1",
+    "version": "12.0.1.0.2",
     "author": "Binovo",
     "website": "http://www.binovo.es",
     "depends": [
